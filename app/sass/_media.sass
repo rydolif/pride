@@ -1,0 +1,354 @@
+
+@media only screen and (max-width : 1200px)
+
+	.header
+		&__logo
+			font-size: 30px
+
+	.nav li
+		margin-right: 25px
+	
+	.hero
+		&__logo
+			top: 0
+			margin-left: 15px
+			margin-right: 15px
+			width: 15%
+
+		&__form
+			div:nth-child(n+1)
+				margin-bottom: 20px
+
+			p
+				margin-bottom: 20px
+
+	.form
+		padding: 30px
+
+	.practice
+		p
+			font-size: 16px
+
+		&__item_btn
+			font-size: 10px
+
+	.work
+		&__list
+			justify-content: space-around
+			&::before
+				display: none
+
+		&__item
+			width: 33%
+			margin-bottom: 40px
+
+	.feedback
+		padding-bottom: 40px
+
+		&__form
+			top: 0
+
+
+@media only screen and (max-width : 992px)
+	h2
+		font-size: 40px
+
+	.header__container
+		padding-right: 70px
+
+	.hero
+		padding: 100px 0
+		text-align: center
+
+		&__container
+			flex-direction: column
+
+		&__form
+			position: relative
+			top: 0
+			right: 0
+			margin-bottom: 30px
+
+		&__title
+			margin-bottom: 30px
+
+	.nav
+		position: fixed
+		display: block
+		width: 322px
+		height: 100%
+		flex-direction: column
+		right: -100%
+		top: 80px
+		z-index: -1
+		background: rgba($text, .95)
+		transition: all .6s
+
+		ul
+			display: flex
+			flex-direction: column
+			justify-content: center
+			margin: 40px
+
+		li
+			margin: 0
+			margin-bottom: 10px
+
+		a
+			color: #fff
+		
+		&--active
+			right: 0
+
+	.hamburger
+		display: block
+
+	.title
+		margin-bottom: 40px
+
+		&--practice h2
+			margin-left: 40px
+
+		&--services h2
+			margin-right: 70px
+
+	.about
+		padding-top: 0
+
+		&__item
+			width: 45%
+			margin-bottom: 20px
+			padding: 15px
+
+	.practice
+		padding-top: 0
+
+	.services
+		padding-top: 30px
+
+		&__container
+			padding: 30px
+
+			&_img
+				right: 65%
+
+		&__list
+			width: 60%
+	
+	.work
+		padding: 40px 0
+
+	.feedback__container
+		padding: 40px 15px
+
+	.contacts
+		padding-top: 40px
+
+		&__info
+			position: relative
+			top: 0
+			margin: 0 auto 30px
+
+		&__map
+			height: 450px
+
+	.footer__container
+		padding: 20px 15px
+
+
+@media only screen and (max-width : 767px)
+	h2
+		font-size: 36px
+
+	.header__logo
+		img
+			height: 40px
+
+	.nav
+		top: 54px
+
+	.practice__item
+		width: 30%
+
+		&:nth-child(1n)
+			margin-bottom: 40px
+
+		&--text
+			width: 60%
+
+			br
+				display: none
+
+	.services__container
+		padding: 15px
+
+	.work__item
+		div
+			margin-bottom: 20px
+
+			&::before
+				bottom: -15px
+	.feedback
+		padding-bottom: 0
+
+		&__bg
+			height: 100%
+
+		&__form
+			left: auto
+			margin: 0 auto
+
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+			text-align: center
+
+		&__col
+			margin-bottom: 20px
+
+		&__logo
+			&::before
+				display: none
+
+		&__up
+			right: 15px
+
+
+@media only screen and (max-width : 576px)
+	.practice__item
+		&:nth-child(1n)
+			width: 48%
+
+		&--text
+			text-align: center
+			width: 100%
+			br
+				display: none
+	
+	.hero
+		padding-bottom: 40px
+
+	h1
+		font-size: 40px
+
+
+@media only screen and (max-width : 480px)
+	h1
+		font-size: 34px
+
+	h2
+		font-size: 24px
+
+	.header
+		.btn
+			display: none
+	
+	.nav
+		.btn
+			display: block
+			width: 80%
+			background: transparent
+
+			&::before
+				display: none
+
+			&:hover,
+			&:focus
+				background: $accent
+
+	.title
+		&--practice h2
+			margin-left: 10px
+
+		&--feedback h2
+			margin-left: 0
+
+		&--services
+			&::before
+				width: 100%
+
+			span
+				left: 0
+				
+			h2
+				background-color: transparent
+
+	.about__item
+		width: 100%
+
+	.practice__item:nth-child(1n)
+		width: 100%
+
+	.services
+		background-image: url(../img/services-bg.png)
+		background-size: cover
+		background-position: center
+
+		&::before,
+		&::after
+			display: none
+
+		&__container
+			background-color: transparent
+			background: rgba(255, 255, 255, .2)
+
+			&_img
+				display: none
+
+		&__list
+			width: 100%
+
+			li
+				background: #fff
+
+
+	.contacts__info
+		padding: 30px
+		width: 100%
+
+	.form
+		padding: 25px
+
+		&::before
+			right: 5px
+			top: 5px
+			left: 5px
+			bottom: 5px
+
+		h3
+			font-size: 20px
+
+	.feedback__form
+		p
+			margin-bottom: 20px
+
+		&_btn
+			margin-top: 0
+
+
+	input, textarea, .btn--form
+		width: 100%
+
+	.btn--form
+		font-size: 14px
+
+	.title
+		margin-bottom: 25px
+
+	.hero__form
+		width: 110%
+
+	.modal
+		max-width: 280px
+		width: 100%
+
+
+
+
+
+
+
+
+
+
